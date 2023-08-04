@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Anton", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.blinking-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.common__container_class {
+  @apply relative overflow-hidden w-full py-48 sm:px-28 px-8 text-white;
+}
+.wrapper {
+  @apply w-full h-[80em] bg-white p-5 flex rounded-lg items-center justify-center;
+}
+.container {
+  @apply relative grid grid-cols-3 gap-[25px] p-[25px] bg-white rounded-lg cursor-pointer shadow-lg;
+  will-change: width, height;
+}
+
+.item {
+  @apply w-[20em] h-[20em] bg-white rounded-lg;
+  will-change: transform, opacity;
 }
