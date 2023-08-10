@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTrail, a } from "@react-spring/web";
+import { scrollTo } from "../utils";
 import { useInView } from "react-intersection-observer";
 
 const TitleTrail: React.FC<{
@@ -116,6 +117,7 @@ export default function Hero() {
             <button
               type="button"
               className="rounded-md text-2xl font-semibold w-[10em] h-16 shadow-lg shadow-cyan-900 bg-cyan-700 hover:bg-cyan-600 duration-200 hover:shadow-cyan-600"
+              onClick={() => scrollTo("contact")}
             >
               CONTACT ME
             </button>
