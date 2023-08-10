@@ -65,8 +65,8 @@ export default function Navbar() {
         (isOpen ? "pointer-events-auto" : "pointer-events-none")
       }
     >
-      <DropDownTrail customClass="w-full px-12" open={isOpen}>
-        <div className="lg:h-26 h-20 flex flex-row justify-between place-items-center bg-slate-800 bg-opacity-70 rounded-2xl w-full lg:my-12 my-10 shadow-lg">
+      <DropDownTrail customClass="w-full lg:px-24 px-12" open={isOpen}>
+        <div className="lg:h-26 h-20 flex flex-row justify-between place-items-center bg-slate-800 bg-opacity-70 rounded-2xl px-8 w-full lg:my-12 my-10 shadow-lg">
           <h1
             className="lg:text-3xl text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-cyan-400 blinking-cursor cursor-pointer"
             onClick={() => scrollTo("home")}
@@ -160,6 +160,7 @@ export default function Navbar() {
                                 ? "bg-cyan-500 text-white"
                                 : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            onClick={() => scrollTo("contact")}
                           >
                             <RocketLaunchIcon
                               className="mr-2 h-5 w-5 fill-slate-800"

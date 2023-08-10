@@ -120,6 +120,7 @@ export const projectCardList: IProjectCard[] = [
     title: "Louis Dev Portfolio App",
     description:
       "A portfolio application of Louis, written in Next.js and UI libraries including TailwindCSS and HeadlessUI.",
+    link: "https://louis-dev-portfolio.vercel.app/",
     imageURL: "https://i.postimg.cc/4xbM08Ws/Capture.png",
     posY: 500,
   },
