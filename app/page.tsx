@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { About, Hero, Projects, WorkExperience } from "@/components";
+import { About, Contact, Hero, Projects, WorkExperience } from "@/components";
 import { Element } from "react-scroll";
 import { useState } from "react";
 
@@ -41,6 +41,9 @@ export default function Home() {
       </Element>
       <Element className="w-full" name="projects">
         <Projects />
+      </Element>
+      <Element className="w-full" name="contact">
+        <Contact />
       </Element>
     </main>
   );

@@ -117,6 +117,13 @@ export const systemTestAbout: IAboutCardContent = {
 
 export const projectCardList: IProjectCard[] = [
   {
+    title: "Louis Dev Portfolio App",
+    description:
+      "A portfolio application of Louis, written in Next.js and UI libraries including TailwindCSS and HeadlessUI.",
+    imageURL: "https://i.postimg.cc/4xbM08Ws/Capture.png",
+    posY: 500,
+  },
+  {
     title: "Custom Neovim with Lua",
     description:
       "A customized neovim implemented modern text editor plugins, written in Lua.",
@@ -127,39 +134,18 @@ export const projectCardList: IProjectCard[] = [
   {
     title: "Car Showcase App",
     description:
-      "A car showcase application streamlines the process of vehicle searching, written in Next.js.",
+      "A car showcase application tutorial streamlines the process of vehicle searching, written in Next.js.",
     imageURL: "https://i.postimg.cc/zf76NHvS/Screenshot-2023-08-02-151133.png",
     link: "https://cars-showcase-nine-silk.vercel.app/",
     posX: 700,
     posY: 500,
     titleColor: "",
   },
-  {
-    title: "Testing",
-    description: "Testing description",
-    imageURL:
-      "https://camo.githubusercontent.com/be086ab77475fc1419a1489305e4393bb925d93d7599046846e9c8da3e1fb0e7/68747470733a2f2f692e706f7374696d672e63632f4b384d596d6759522f72656163742d6578616d706c652e706e67",
-  },
-  {
-    title: "Testing",
-    description: "Testing description",
-    imageURL:
-      "https://camo.githubusercontent.com/be086ab77475fc1419a1489305e4393bb925d93d7599046846e9c8da3e1fb0e7/68747470733a2f2f692e706f7374696d672e63632f4b384d596d6759522f72656163742d6578616d706c652e706e67",
-  },
-  {
-    title: "Testing",
-    description: "Testing description",
-    imageURL:
-      "https://camo.githubusercontent.com/be086ab77475fc1419a1489305e4393bb925d93d7599046846e9c8da3e1fb0e7/68747470733a2f2f692e706f7374696d672e63632f4b384d596d6759522f72656163742d6578616d706c652e706e67",
-  },
-  {
-    title: "Testing",
-    description: "Testing description",
-    imageURL:
-      "https://camo.githubusercontent.com/be086ab77475fc1419a1489305e4393bb925d93d7599046846e9c8da3e1fb0e7/68747470733a2f2f692e706f7374696d672e63632f4b384d596d6759522f72656163742d6578616d706c652e706e67",
-  },
 ];
 
+export const iconImg =
+  "https://media.licdn.com/dms/image/C5603AQGycEnE1uUcbA/profile-displayphoto-shrink_800_800/0/1625061102598?e=1697068800&v=beta&t=IgnFhHjakqi6ZN_mz9SFo_2DOeYrrl-YJdBOerEsnnw";
+export const instagramProfile = "https://www.instagram.com/dzihin_ss/";
 export const githubProfile = "https://github.com/distepstar";
 export const linkedinProfile =
   "https://www.linkedin.com/in/louis-lei-917002156";
@@ -175,6 +161,13 @@ interface IWorkExperienceLink {
   title: string;
   url: string;
 }
+
+export interface IEmailData {
+  name: string;
+  email: string;
+  message?: string;
+}
+
 export interface IWorkExperienceCard {
   employmentDate: string;
   title: string;

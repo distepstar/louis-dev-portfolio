@@ -29,7 +29,7 @@ const AboutCardInfo: React.FC<IAboutCardInfo> = ({
   } = items;
 
   return (
-    <div className="relative w-full h-full flex flex-col justify-between items-center sm:space-y-20 space-y-12 py-16 px-6 sm:border-r-[1px] sm:border-b-[0px] border-b-[1px] border-slate-300">
+    <div className="relative w-full h-full flex flex-col justify-between items-center lg:space-y-20 space-y-12 py-16 px-6 lg:border-r-[1px] lg:border-b-[0px] border-b-[1px] border-slate-300">
       <div className="flex flex-col space-y-8 items-center text-center h-[40%] ">
         <span
           className={
@@ -46,7 +46,7 @@ const AboutCardInfo: React.FC<IAboutCardInfo> = ({
       </div>
       <div className="flex flex-col space-y-8 items-center text-center h-[30%]">
         <div className="text-2xl text-cyan-800">{sectionOneTitle}</div>
-        <div className="grid sm:grid-cols-3 sm:gap-4 grid-cols-1 gap-2">
+        <div className="grid lg:grid-cols-3 lg:gap-4 grid-cols-1 gap-2">
           {sectionOneContent
             ? sectionOneContent.map((item: string, idx: number) => (
                 <div
@@ -61,7 +61,7 @@ const AboutCardInfo: React.FC<IAboutCardInfo> = ({
       </div>
       <div className="flex flex-col space-y-8 items-center text-center h-[30%]">
         <div className="text-2xl text-cyan-800">{sectionTwoTitle}</div>
-        <div className="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-2">
+        <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-2">
           {sectionTwoContent
             ? sectionTwoContent.map((item: string, idx: number) => (
                 <div
@@ -90,9 +90,9 @@ export default function AboutCard({
   });
 
   return (
-    <div className="relative w-full sm:h-[70em] h-[210em] py-44" ref={ref}>
+    <div className="relative w-full lg:h-[70em] h-[210em] py-44" ref={ref}>
       <DropDownTrail customClass="w-full h-full" open={inView}>
-        <div className="w-full h-full flex sm:flex-row flex-col justify-between items-start rounded-xl bg-white shadow-lg sm:[&>*:nth-child(3)]:border-r-0 [&>*:nth-child(3)]:border-b-0">
+        <div className="w-full h-full flex lg:flex-row flex-col justify-between items-start rounded-xl bg-white shadow-lg lg:[&>*:nth-child(3)]:border-r-0 [&>*:nth-child(3)]:border-b-0">
           <AboutCardInfo
             icon={
               <CodeBracketIcon

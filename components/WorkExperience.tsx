@@ -16,7 +16,7 @@ export default function WorkExperience() {
   });
 
   return (
-    <div className="common__container_class sm:h-[130em] h-[235em]" ref={ref}>
+    <div className="common__container_class lg:h-[130em] h-[235em]" ref={ref}>
       <Transition.Root
         show={inView}
         enter="transition-all ease-in-out duration-200"
@@ -26,9 +26,9 @@ export default function WorkExperience() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-6"
       >
-        <div className="w-full flex flex-col py-44 sm:space-y-24 space-y-12 justify-start items-center">
+        <div className="w-full flex flex-col py-44 lg:space-y-24 space-y-12 justify-start items-center">
           <div className="flex flex-col justify-center items-center space-y-4">
-            <h1 className="sm:text-[5em] text-[3em] text-center font-semibold">
+            <h1 className="lg:text-[5em] text-[3em] text-center font-semibold">
               Work Experience
             </h1>
             <span className="font-semibold text-center ">

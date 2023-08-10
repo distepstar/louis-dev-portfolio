@@ -20,7 +20,7 @@ export default function ProjectCard({
   return (
     <div
       className={
-        "relative sm:w-[30em] w-[26em] h-[20em] rounded-lg hover:shadow-lg flex flex-wrap justify-center items-center group cursor-pointer overflow-hidden"
+        "relative lg:w-[30em] w-[26em] h-[20em] rounded-lg hover:shadow-lg flex flex-wrap justify-center items-center group cursor-pointer overflow-hidden"
       }
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -36,7 +36,7 @@ export default function ProjectCard({
 
       <h1
         className={
-          "w-full h-full flex justify-center absolute items-center rounded-lg sm:text-3xl text-2xl sm:group-hover:text-4xl ease-in-out duration-200 transition-all font-semibold " +
+          "w-full h-full flex justify-center absolute items-center rounded-lg lg:text-3xl text-2xl lg:group-hover:text-4xl ease-in-out duration-200 transition-all font-semibold " +
           (titleColor ? titleColor : "bg-slate-900/80")
         }
       >

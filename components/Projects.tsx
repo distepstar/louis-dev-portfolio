@@ -12,7 +12,7 @@ import { scrollTo } from "../utils";
 export default function Projects() {
   const { ref, inView, entry } = useInView({ threshold: 0.2 });
   return (
-    <div className="common__container_class sm:h-[110em] h-[190em]" ref={ref}>
+    <div className="common__container_class lg:h-[110em] h-[120em]" ref={ref}>
       <Transition.Root
         show={inView}
         enter="transition-all ease-in-out duration-200"
@@ -24,10 +24,10 @@ export default function Projects() {
       >
         <div className="w-full h-full flex flex-col space-y-6 justify-center items-center">
           <div className="flex flex-col justify-center items-center space-y-4 py-12 pb-24">
-            <h1 className="sm:text-[5em] text-[3em] font-semibold text-center">
+            <h1 className="lg:text-[5em] text-[3em] font-semibold text-center">
               My Recent Project
             </h1>
-            <span className="flex sm:flex-row flex-col sm:space-x-4 sm:space-y-0 space-y-4 justify-center items-center text-center font-semibold">
+            <span className="flex lg:flex-row flex-col lg:space-x-4 lg:space-y-0 space-y-4 justify-center items-center text-center font-semibold">
               <span>
                 Here are few past projects I've worked on. Want to see more?
               </span>

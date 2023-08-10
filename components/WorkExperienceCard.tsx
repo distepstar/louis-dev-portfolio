@@ -26,11 +26,11 @@ export default function WorkExperienceCard({
 
   return (
     <div className="relative w-full group rounded-lg z-20">
-      <div className="flex sm:flex-row flex-col sm:space-y-0 space-y-4 flex-wrap justify-between items-start transition duration-300 ease-in-out group-hover:bg-slate-900/60 p-12 text-slate-200 rounded-lg">
-        <span className="sm:w-[30%] text-sm font-semibold text-slate-400">
+      <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 flex-wrap justify-between items-start transition duration-300 ease-in-out group-hover:bg-slate-900/60 p-12 text-slate-200 rounded-lg">
+        <span className="lg:w-[30%] text-sm font-semibold text-slate-400">
           {employmentDate}
         </span>
-        <div className="sm:w-[70%] flex flex-col justify-between items-center space-y-4">
+        <div className="lg:w-[70%] flex flex-col justify-between items-center space-y-4">
           <Link
             className="text-2xl font-semibold w-full cursor-pointer"
             href={refLink}

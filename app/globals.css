@@ -24,9 +24,21 @@
     opacity: 0;
   }
 }
+.icon {
+  font-size: 50px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0c8),
+    to(#333)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .common__container_class {
-  @apply relative overflow-hidden w-full py-48 sm:px-28 px-8 text-white;
+  @apply relative overflow-hidden w-full py-48 lg:px-28 px-8 text-white;
 }
 .wrapper {
   @apply w-full h-[80em] bg-white p-5 flex rounded-lg items-center justify-center;

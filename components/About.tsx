@@ -9,9 +9,9 @@ export default function About() {
 
   return (
     <div className="common__container_class">
-      <div className="w-full flex flex-col justify-start place-items-center sm:space-y-12 space-y-6">
+      <div className="w-full flex flex-col justify-start place-items-center lg:space-y-12 space-y-6">
         <DropDownIntro
-          customClass="w-full flex justify-center items-center font-semibold sm:text-[6em] text-[3em] h-[8em] text-center"
+          customClass="w-full flex justify-center items-center font-semibold lg:text-[6em] text-[3em] h-[8em] text-center"
           title="Hi! I'm Louis!"
           threshold={0.3}
           config={{
@@ -19,7 +19,7 @@ export default function About() {
           }}
         />
         <DropDownIntro
-          customClass="w-full flex justify-center items-center font-semibold sm:text-[6em] text-[3em] h-[8em] text-center"
+          customClass="w-full flex justify-center items-center font-semibold lg:text-[6em] text-[3em] h-[8em] text-center"
           title="It's good to see you here."
           threshold={0.3}
           config={{
@@ -27,7 +27,7 @@ export default function About() {
           }}
         />
         <DropDownIntro
-          customClass="w-full flex justify-center items-center font-semibold sm:text-[6em] text-[3em] h-[8em] text-center"
+          customClass="w-full flex justify-center items-center font-semibold lg:text-[6em] text-[3em] h-[8em] text-center"
           title="Let me tell you more about myself."
           threshold={0.3}
           config={{

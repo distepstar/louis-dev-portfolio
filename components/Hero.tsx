@@ -67,22 +67,22 @@ export default function Hero() {
 
   return (
     <div className="common__container_class h-[60em]" ref={ref}>
-      <div className="flex flex-col sm:space-y-16 space-y-8">
+      <div className="flex flex-col lg:space-y-16 space-y-8">
         <div className="w-full flex flex-col justify-center items-start space-y-2">
           <TitleTrail
-            customClass="font-semibold sm:text-[4em] text-[1.8em] "
+            customClass="font-semibold lg:text-[4em] text-[1.8em] "
             open={inView}
           >
             <span>with programming and creativity,</span>
           </TitleTrail>
           <TitleTrail
-            customClass="font-semibold sm:text-[4em] text-[1.8em] "
+            customClass="font-semibold lg:text-[4em] text-[1.8em] "
             open={inView}
           >
             <span>we can build</span>
           </TitleTrail>
           <TitleTrail
-            customClass="font-semibold sm:text-[4em] text-[1.8em] "
+            customClass="font-semibold lg:text-[4em] text-[1.8em] "
             open={inView}
           >
             <span>
@@ -93,16 +93,16 @@ export default function Hero() {
             </span>
           </TitleTrail>
           <TitleTrail
-            customClass="font-semibold sm:text-[4em] text-[1.8em] "
+            customClass="font-semibold lg:text-[4em] text-[1.8em] "
             open={inView}
           >
             <span>to change the world.</span>
           </TitleTrail>
         </div>
 
-        <div className="flex sm:flex-row flex-col sm:space-y-0 space-y-16 justify-between place-items-center w-full">
+        <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-16 justify-between place-items-center w-full">
           <DescriptionTrail
-            customClass="sm:text-lg text-sm sm:text-left text-center sm:w-[40em] w-full "
+            customClass="lg:text-lg text-sm lg:text-left text-center lg:w-[40em] w-full "
             open={inView}
           >
             <span className="">
